@@ -29,7 +29,7 @@ public class Overridable {
         }
     }
 
-    class Aircraft extends Tank {
+    public class Aircraft extends Tank {
         public void printName() {
             System.out.println("А вот ничего подобного! Я - самолет");
         }
@@ -38,7 +38,6 @@ public class Overridable {
     public static void main(String[] args) {
         Aircraft boeing = new Overridable().new Aircraft();
         boeing.printName();
-        //boeing.printAll();
     }
 
 }
